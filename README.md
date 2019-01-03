@@ -7,7 +7,7 @@ This version includes as its primary features makefile parsing, dependency check
 ## Execution
 Simply download files onto your system and build using the native *make* program. 
 
-Once built, from any directory with a makefile, build a project by running 537make.
+Once built, from any directory with a makefile, build a project by running simpleMake.
 
 
 ## Formatting Requirements
@@ -25,12 +25,12 @@ In order for this version of *make* to accept the given makefile, the file must 
 For example, if this project's makefile was written in this simplified format:
 
 ```
-all: 537make.o fileParser.o linkedList.o buildSpec.o dependencyGraph.o commandExec.o
-	gcc -o 537make 537make.o fileParser.o linkedList.o buildSpec.o dependencyGraph.o commandExec.o
+all: simpleMake.o fileParser.o linkedList.o buildSpec.o dependencyGraph.o commandExec.o
+	gcc -o simpleMake simpleMake.o fileParser.o linkedList.o buildSpec.o dependencyGraph.o commandExec.o
 
 
-537make.o: 537make.c dependencyGraph.h fileParser.h linkedList.h commandExec.h
-	gcc -Wextra -Wall -c 537make.c
+simpleMake.o: simpleMake.c dependencyGraph.h fileParser.h linkedList.h commandExec.h
+	gcc -Wextra -Wall -c simpleMake.c
 
 fileParser.o: fileParser.c fileParser.h linkedList.h buildSpec.h 
 	gcc -Wextra -Wall -c fileParser.c
@@ -51,7 +51,7 @@ commandExec.o: commandExec.c commandExec.h dependencyGraph.h linkedList.h
 ## Testing
 Test files to be added soon.
 
-Test files will validate that 537make behaves as expected given both valid and invalid formatting, as well as when given various  makefile dependency structures.
+Test files will validate that simpleMake behaves as expected given both valid and invalid formatting, as well as when given various  makefile dependency structures.
 
 
 ## Authors
