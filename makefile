@@ -1,13 +1,13 @@
 CC = gcc
 WARNING_FLAGS = -Wall -Wextra -g -O0
-EXE = 537make
-#SCAN_BUILD_DIR = 
+EXE = simpleMake
+#SCAN_BUILD_DIR = #<desired directory for CSA analysis results>
 
-all: 537make.o fileParser.o linkedList.o buildSpec.o dependencyGraph.o commandExec.o
-	$(CC) -o $(EXE) 537make.o fileParser.o linkedList.o buildSpec.o dependencyGraph.o commandExec.o
+all: simpleMake.o fileParser.o linkedList.o buildSpec.o dependencyGraph.o commandExec.o
+	$(CC) -o $(EXE) simpleMake.o fileParser.o linkedList.o buildSpec.o dependencyGraph.o commandExec.o
 
-537make.o: 537make.c dependencyGraph.h fileParser.h linkedList.h commandExec.h
-	$(CC) $(WARNING_FLAGS) -c 537make.c
+simpleMake.o: simpleMake.c dependencyGraph.h fileParser.h linkedList.h commandExec.h
+	$(CC) $(WARNING_FLAGS) -c simpleMake.c
 
 fileParser.o: fileParser.c fileParser.h linkedList.h buildSpec.h 
 	$(CC) $(WARNING_FLAGS) -c fileParser.c
