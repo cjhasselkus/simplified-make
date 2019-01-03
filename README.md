@@ -4,12 +4,10 @@ A simpler version of the *make* tool used in LINUX systems for compilation. Writ
 
 This version includes as its primary features makefile parsing, dependency checking, cyclical dependency detection, and command execution.
 
-## Installing
+## Execution
 Simply download files onto your system and build using the native *make* program. 
 
 Once built, from any directory with a makefile, build a project by running 537make.
-
-For example, if you have downloaded 537make 
 
 
 ## Formatting Requirements
