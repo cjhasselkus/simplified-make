@@ -1,6 +1,6 @@
 # Simplified make
 
-A simpler version of the *make* tool used in LINUX systems for compilation. Written in C, this project accepts a makefile within the working directory given that the makefile follows specific formatting requirements (described below). When run on a correctly formatted makefile, the project will be built, and any valid commands in the makefile will be executed.
+A simpler version of the *make* tool used in LINUX systems for compilation I wrote for learning purposes. Written in C, this project accepts a makefile within the working directory given that the makefile follows specific formatting requirements (described below). When run on a correctly formatted makefile, the project will be built, and any valid commands in the makefile will be executed.
 
 This version includes as its primary features makefile parsing, dependency checking, cyclical dependency detection, and command execution.
 
